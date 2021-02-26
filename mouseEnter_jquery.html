@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#h1").mouseenter(function(){
+				$("div").text("Mouse entered on heading").show().fadeOut(2000);
+
+			});
+			$("#h1").mouseleave(function(){
+				$("div").text("Byee Byee").show().fadeOut(2000);
+
+			});
+		});
+	</script>
+</head>
+<body>
+<h1 id="h1">Enter this heading</h1>
+<div></div>
+</body>
+</html>

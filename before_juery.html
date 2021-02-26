@@ -1,0 +1,22 @@
+<!-- It is used to insert the specified element before the selected element
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery.js">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ss").click(function(){
+				$("p").before("<p><b><font color='red'>Hello juery</font></b></p>");
+				$("p").after("<p><b>Hello juery</b></p>");
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="submit" name="" value="click" id="ss">
+	<p>This is my pen</p>
+	<p>This is my page</p>
+</body>
+</html>

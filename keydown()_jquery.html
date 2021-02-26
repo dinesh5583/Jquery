@@ -1,0 +1,22 @@
+<!-- Whan we press a key on keyboard the keydown event occurs its execute the function associate with the keydown() method to run.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("input").keydown(function(){
+				$("input").css("background-color","pink");
+				$("input").css("color","blue");
+				$("input").keyup(function(){
+					$("input").css("background-color","palegreen");
+				});
+			});
+		})
+	</script>
+</head>
+<body>
+	write something: <input type="text" name="">
+</body>
+</html>

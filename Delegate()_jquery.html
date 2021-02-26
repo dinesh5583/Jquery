@@ -1,0 +1,29 @@
+<!-- It is used to attach one or more event handlers for specified elements which are the children of selected elements. This method executes a function  to run whwn the event occurs.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+			background: yellow;
+			font-weight: bold;
+			cursor: pointer;
+			padding: 5px;
+		}
+		p:hover{
+			background: #00ff00;
+		}
+	</style>
+	<script src="jquery.js"></script>
+</head>
+<body>
+<p>Click me for next</p>
+<script>
+	$(document).ready(function(){
+		$("body").delegate("p","Click",function(){
+			$(this).after("<p> Click me for another paragraph</p>");
+		});
+	});
+</script>
+</body>
+</html>

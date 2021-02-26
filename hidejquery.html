@@ -1,0 +1,29 @@
+<!--hide method --it is used to hide the selected elements
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		
+	</script>
+	<script>
+		$(document).ready(function(){
+			$("#ss").click(function(){
+				$("p").toggle();
+			});
+		});
+		$(document).ready(function(){
+			$("#mm").click(function(){
+				$("p").show();
+			});
+		});
+	</script>
+</head>
+<body>
+<p>Welcome to the world of jquery</p>
+<input type="submit" name="" value="click" id="ss">
+<input type="submit" name="" value="show" id="mm">
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		i=0;
+		$("input").keypress(function(){
+			$("input").keypress(function(){
+				$("span").text(i+=1);
+			});
+		});
+	</script>
+</head>
+<body>
+	write something:<input type="text" name="">
+	<p>keypress:<span>0</span></p>
+</body>
+</html>
